@@ -1,9 +1,7 @@
-# Задание первое
-a = 17
-b = 18
-c = int(input())
-s = str(input())
+a = input("Введите значения для списка:").split()
+a[:-1:2], a[1::2] = a[1::2], a[:-1:2]
+print(*a)
+new_list = " ".join(a)
+print(new_list)
 
-a = c
-b = s
-print(a,b)
+

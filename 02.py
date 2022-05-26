@@ -1,5 +1,5 @@
-timeC = int(intput("Введите время в секундах:"))
-hours = timeC // 3600
-minute = timeC // 60
-sec = minute * 60
-print(f"Время в формате ч:м:с - {hours}, {minute}, {sec}")
+a = input("Введите значения для списка:").split()
+a[:-1:2], a[1::2] = a[1::2], a[:-1:2]
+print(*a)
+new_list = " ".join(a)
+print(new_list)
